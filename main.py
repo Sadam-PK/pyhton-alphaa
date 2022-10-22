@@ -771,3 +771,132 @@
 # alnafi = 'The Propitious'
 # print(alnafi[3:])
 #
+
+# ########### Files #####################
+#
+# myFile = open(r"/home/sadam/python/python-alphaa/pyhton-alphaa/test.txt", "r")
+# x = myFile.read()
+# print(x)
+# myFile.close()
+#
+# myFile = open(r"/home/sadam/python/python-alphaa/pyhton-alphaa/test.txt", "r")
+# x = myFile.readline()
+# print(x)
+# myFile.close()
+#
+# myFile = open(r"/home/sadam/python/python-alphaa/pyhton-alphaa/test.txt", "r")
+# x = myFile.readlines()
+# print(x)
+# myFile.close()
+#
+# ########### file read with loops ############
+#
+# myFile = open(r"/home/sadam/python/python-alphaa/pyhton-alphaa/test.txt", "r")
+#
+# for i in myFile:
+#     print(i)
+#
+# myFile.close()
+#
+# ######### wiriting files ########
+#
+# x = open(r"/home/sadam/python/python-alphaa/pyhton-alphaa/test2.txt", "w")
+# x.write("This is a new line..")
+# x.close()
+#
+# ####### importing code ------ Modules ##########
+#
+# import this
+#
+# import math
+# math.sqrt(4)
+#
+# from math import sqrt
+# sqrt(16)
+#
+# from math import pi, sqrt
+# pi
+#
+# ############ Functions #################
+#
+# def displayFunction():
+#     print("This is a function.")
+# displayFunction()
+#
+# def empFunction():
+#     pass
+# empFunction()
+#
+# def add(a, b):
+#     return a+b
+# print(add(2,4))
+#
+# def add(a, b):
+#     return a+b
+# print(add(a = 2, b = 4))
+#
+# def add(a, b):
+#     return a+b
+# print(add(b = 2, a = 4))
+#
+# def add(a, b):
+#     return a+b
+# result = add(a = 10, b = 20)
+# print(result)
+#
+# ###### default val function ########
+#
+# def add(a, b = 10):
+#     return a+b
+#
+# add(a = 5, b = 9)
+#
+# add(a = 1)
+#
+# ###### mixed, with default value, and without mentioning its parameter
+#
+# add(2)
+#
+# ########## infinite arguments ############
+#
+# def many(*args, **kwargs):
+#     print(args)
+#     print(kwargs)
+#
+#
+# many(1,2,3, name = 'sadam khan', org = 'alnafi')
+#
+# ########## Scope ##############
+#
+# def funA():
+#     global a #### if not defined globally - program will crash at calling of funB()
+#     a = 1
+#     b = 2
+#     return a+b
+#
+# def funB():
+#     c = 3
+#     return a+c
+# print(funA())
+# print(funB())
+#
+# ######### classes #############
+#
+# class Vehicle:
+#     def __init__(self):
+#         print("Vehicle class constructor")
+# v = Vehicle()
+#
+# class Vehicle:
+#     def __init__(self, model, color, name):
+#         self.model = model
+#         self.color = color
+#         self.name = name
+#
+#     def vehicleInfo(self):
+#         print (v.model + ' ' + v.color + ' ' + v.name)
+#
+# v = Vehicle("2020","Red","Farari")
+#
+# v.vehicleInfo()
+#

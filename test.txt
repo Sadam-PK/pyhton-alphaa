@@ -1,0 +1,53 @@
+1. Method overriding is achieved through inheritence.
+2. Method overloading is avheived through diff functions parameters.
+3. Abstract class ensure the methods to be implemented.
+4. Interfaces ensure multiple inheritence and also can limit use of certain features of a bigger class which have implemented the interface(harry code)
+5. Polymorphism means more than one form, same object performing different operations according to the requirement.
+Polymorphism can be achieved by using two ways, those are
+
+-Method overriding
+-Method overloading
+
+~ Method overloading means writing two or more methods in the same class by using same method name, but the passing parameters is different.
+
+~ Method overriding means we use the method names in the different classes,that means parent class method is used in the child class.
+
+
+-------------- important ------------
+Is method overloading polymorphism?
+Many programmers are confused about the relationship of polymorphism to method overriding and method overloading. In fact, only method overriding is true polymorphism. Overloading shares the same method’s name but the parameters are different. Polymorphism is a broad term, so there will always be discussions about this topic.
+-------------------------------------
+
+6. Polymorphism helps in decoupling/ loose coupling. Which makes extentioning of classes easy.
+
+7. You could have a method in a class that is overridden in one or more subclasses. The method does different things depending on which class was used to instantiate an object.
+
+8. Polymorphism is simply the ability of an object to specialize its behavior based on its type.
+
+--------------------------------------------
+	Important Example
+--------------------------------------------
+9. The classic example, Dogs and cats are animals, animals have the method makeNoise. I can iterate through an array of animals calling makeNoise on them and expect that they would do there respective implementation.
+The calling code does not have to know what specific animal they are.
+
+Animal dog = new Dog();	dog.makeNoise();
+Animal cat = new Cat();	cat.makeNoise();
+Animal lion = new Lion();	lion.makeNoise();
+Animal wolf = new Wolf();	wolf.makeNoise();
+
+Animal animal = new Animal();
+
+animal.add(dog);
+animal.add(cat);
+animal.add(lion);
+animal.add(wolf);
+
+for(){animal.makeNoise()} // print all animals with their own sound..even though makeNoise() is common function.
+
+10. Polymorphism is the ability for an object to appear in multiple forms. This involves using inheritance and virtual functions to build a family of objects which can be interchanged. The base class contains the prototypes of the virtual functions, possibly unimplemented or with default implementations as the application dictates, and the various derived classes each implements them differently to affect different behaviors.
+
+----------------------
+	Question
+----------------------
+if polymorphism is really the different forms of an object. then what about overloading? In overloading, the object remains the same.. the method parameters change.. so it is questionable..
+
